@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true" name="D:/Alas D.O.O intervju/SauceDemo/src/test/java/TestSauceDemo">
+        <classes>
+            <class name="TestSauceDemo.TestAddToCartSauceDemo">
+                <methods>
+                    <include name="testOneItemAddedToCartHappyPath"/>
+                    <include name="test2DifferentItemsAddedToCartHappyPath"/>
+                    <include name="testNoItemsAddedToCart"/>
+                </methods>
+            </class>
+            <class name="TestSauceDemo.TestLoginSauceDemo">
+                <methods>
+                    <include name="testSuccessfulLogin"/>
+                    <include name="testLoginWithLockedOutUser"/>
+                    <include name="testLoginWithProblemUser"/>
+                    <include name="testLoginWithPerformanceGlitchUser"/>
+                    <include name="testLoginWithInvalidData"/>
+                </methods>
+            </class>
+            <class name="TestSauceDemo.TestRemoveFromCart">
+                <methods>
+                    <include name="testOneItemIsRemoved"/>
+                    <include name="testRemoveOneOutOfTwoItems"/>
+                </methods>
+            </class>
+            <class name="TestSauceDemo.TestShoppingSauceDemo">
+                <methods>
+                    <include name="testShoppingOneItemHappyPath"/>
+                    <include name="testShoppingWithNoZipCodeEnteredAlertIsPresent"/>
+                </methods>
+            </class>
+            <class name="TestSauceDemo.TestSideMenuSauceDemo">
+                <methods>
+                    <include name="testSideMenuItemsAreAllListed"/>
+                    <include name="testWhenClickedOnLogoutInsideSideMenuYouAreLoggedOut"/>
+                    <include name="testWhereNavigatedWhenClickedOnAboutButton"/>
+                    <include name="testIfSideMenuIsCollapsedWhenClickedOnX"/>
+                </methods>
+            </class>
+            <class name="TestSauceDemo.TestSortingSauceDemo">
+                <methods>
+                    <include name="testHighToLowPriceOrder"/>
+                    <include name="testSortingByNameAtoZ"/>
+                </methods>
+            </class>
+            <class name="TestSauceDemo.TestShoppingSauceDemo">
+                <methods>
+                    <include name="testShoppingOneItemHappyPath"/>
+                    <include name="testShoppingWithNoZipCodeEnteredAlertIsPresent"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
