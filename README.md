@@ -17,7 +17,8 @@ i.	libertyvan.com
 o	PART - test cases for testing a walmartcontacts.com/614 page
 
 Automation Project tasks
-Task 1
+
+Task 1:
 
 Automation Project is a Maven project named SauceDemo. The task was to use TestNg annotations, and ChromDrive. In the .pom file, I have included the dependencies needed.
 Using a Page Object Model, I have saved the classes, the methods, and the WebElement in SauceDemo\src\test\java\PagesSauceDemo
@@ -25,7 +26,8 @@ The tests are located in SauceDemo\src\test\java\TestSauceDemo
 I have managed to successfully respond to the most of the requests in the Automation Project.
 
 
-Task 2
+Task 2:
+
 I did not know to write automation test for www.gorest.co.in , but I did task in Postman.
 I present screenshots and responses.
 
