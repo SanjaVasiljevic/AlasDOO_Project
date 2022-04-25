@@ -11,9 +11,11 @@ There are two parts of the project:
 Manual Tasks
 
 There are three tasks in the Manual tasks folder:
+
 •	PART - exploratory testing of the following websites:
  .	gatesnfences.com.
-i.	libertyvan.com
+	.libertyvan.com
+ 
 o	PART - test cases for testing a walmartcontacts.com/614 page
 
 Automation Project tasks
