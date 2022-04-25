@@ -1,4 +1,5 @@
 package TestSauceDemo;
+
 import PagesSauceDemo.*;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
@@ -7,11 +8,12 @@ import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
+
 import java.io.IOException;
 import java.time.Duration;
 
 public class TestShoppingSauceDemo {
-    WebDriver driver;
+    private WebDriver driver;
     private LogInSauceDemo logInSauceDemo;
     private InventorySauceDemo inventorySauceDemo;
     private CartSauceDemo cartSauceDemo;
@@ -26,11 +28,11 @@ public class TestShoppingSauceDemo {
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
         logInSauceDemo = new LogInSauceDemo(driver);
-        inventorySauceDemo=new InventorySauceDemo(driver);
-        cartSauceDemo=new CartSauceDemo(driver);
-        checkOutInformationSauceDemo=new CheckOutInformationSauceDemo(driver);
-        checkOutCompleteSauceDemo=new CheckOutCompleteSauceDemo(driver);
-        checkOutFinishSauceDemo=new CheckOutFinishSauceDemo(driver);
+        cartSauceDemo = new CartSauceDemo(driver);
+        inventorySauceDemo = new InventorySauceDemo(driver);
+        checkOutInformationSauceDemo = new CheckOutInformationSauceDemo(driver);
+        checkOutFinishSauceDemo = new CheckOutFinishSauceDemo(driver);
+        checkOutCompleteSauceDemo = new CheckOutCompleteSauceDemo(driver);
     }
 
     @AfterClass
@@ -39,6 +41,7 @@ public class TestShoppingSauceDemo {
         driver.quit();
         Runtime.getRuntime().exec(("taskkill /F /IM chromedriver.exe /T"));
     }
+
     /**
      * This test verifies that when all the input is correct, checkout is completed successfully
      * and the right message is displayed for placing order
