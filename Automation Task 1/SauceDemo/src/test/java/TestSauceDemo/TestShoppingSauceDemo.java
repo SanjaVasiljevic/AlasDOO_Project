@@ -28,7 +28,7 @@ public class TestShoppingSauceDemo {
         logInSauceDemo = new LogInSauceDemo(driver);
         cartSauceDemo = new CartSauceDemo(driver);
         inventorySauceDemo = new InventorySauceDemo(driver);
-       // checkOutInformationSauceDemo = new CheckOutInformationSauceDemo(driver);
+        checkOutInformationSauceDemo = new CheckOutInformationSauceDemo(driver);
         checkOutFinishSauceDemo = new CheckOutFinishSauceDemo(driver);
         checkOutCompleteSauceDemo = new CheckOutCompleteSauceDemo(driver);
     }
