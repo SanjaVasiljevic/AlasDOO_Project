@@ -1,5 +1,4 @@
 package TestSauceDemo;
-
 import PagesSauceDemo.*;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
@@ -8,7 +7,6 @@ import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
-
 import java.io.IOException;
 import java.time.Duration;
 
@@ -30,7 +28,7 @@ public class TestShoppingSauceDemo {
         logInSauceDemo = new LogInSauceDemo(driver);
         cartSauceDemo = new CartSauceDemo(driver);
         inventorySauceDemo = new InventorySauceDemo(driver);
-        checkOutInformationSauceDemo = new CheckOutInformationSauceDemo(driver);
+       // checkOutInformationSauceDemo = new CheckOutInformationSauceDemo(driver);
         checkOutFinishSauceDemo = new CheckOutFinishSauceDemo(driver);
         checkOutCompleteSauceDemo = new CheckOutCompleteSauceDemo(driver);
     }

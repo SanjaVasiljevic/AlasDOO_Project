@@ -34,8 +34,9 @@ public class CheckOutInformationSauceDemo {
     public boolean isAlertMessageDisplayed() {
         return alertMessageZipCode.isDisplayed();
     }
+
     public CheckOutInformationSauceDemo(WebDriver driver) {
         this.driver = driver;
-        PageFactory.initElements(driver,  CheckOutInformationSauceDemo.class);
+        PageFactory.initElements(driver,this);
     }
 }
