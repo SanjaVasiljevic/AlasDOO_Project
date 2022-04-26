@@ -9,12 +9,13 @@ import java.io.File;
 import java.io.IOException;
 
 public class ScreenshotBase {
-    WebDriver driver;
-        //public WebDriver driver;
-        public void takescreenshot(WebDriver driver, String path)throws IOException {
 
-            File sourcefilename = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
-            FileUtils.copyFile(sourcefilename, new File("path"));
-        }
+    public WebDriver driver;
+
+    public void takeScreenshot() throws IOException {
+        File scrFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
+        String currentDir = "D:\\Alas D.O.O intervju\\AlasDOO_Project";
+        FileUtils.copyFile(scrFile, new File(currentDir + "/screenshots/" + System.currentTimeMillis() + ".png"));
     }
+}
 
